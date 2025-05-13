@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fdfdfd;
+}
+
+header {
+  background-color: rgb(190, 202, 213);
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+.logo {
+  text-decoration: none;
+  color: rgb(38, 38, 243);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.links a {
+  color: #4f27df;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+.links a:hover {
+  color: #9305e5;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(media/still-life-books-versus-technology.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.main h2 span {
+  color: #4e9eff;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.main h3 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.buttom {
+  text-decoration: none;
+  color: #fff;
+  background-color: #4f27df;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: 0.7s ease;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.buttom:hover {
+  background-color: #23176c;
+  transform: scale(1.1);
+}
+
+.SOCIEL-ICONS a {
+  color: #fff;
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+
+/* Title Style */
+.title {
+  text-align: center;
+  color: #23176c;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+/* Services Section */
+#services .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#services .card {
+  width: 280px;
+  background-color: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+#services .card:hover {
+  transform: scale(1.05);
+  background-color: #f4f4f4;
+}
+
+.icon {
+  color: #4f27df;
+  font-size: 4em;
+  text-align: center;
+}
+
+.info h3 {
+  color: #23176c;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+/* Projects Section */
+.projects {
+  background-color: #030212;
+}
+
+.projects .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projects-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  transition: 0.3s ease;
+}
+
+.projects-card:hover {
+  transform: scale(1.05);
+}
+
+.projects-imgs img {
+  width: 100%;
+}
+
+.projects-thminel {
+  padding: 1em;
+}
+
+.projects-CETOGRY {
+  font-weight: 600;
+  color: #4f27df;
+  margin-bottom: 5px;
+}
+
+.projects-title span {
+  font-size: 1em;
+  color: #000;
+}
+
+/* Contact Section */
+#contact .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+#contact .card {
+  width: 280px;
+  background-color: #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+#contact .card:hover {
+  transform: scale(1.05);
+  background-color: #f4f4f4;
+}
+
+.footer {
+  background-color: #4218b4;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer p {
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #4f27df;
+}
+#scrollTopBtn {
+  position: fixed;
+  bottom: 60px; /* أعلى من شريط التواصل */
+  right: 20px;
+  z-index: 1001; /* أعلى من كل شيء */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+  transition: 0.3s;
+}
+#scrollTopBtn:hover {
+  background-color: #555;
+}
+
+/* شريط التواصل الثابت */
+.floating-contact-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4218b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+/* تنسيق الأيقونات */
+.contact-icon {
+  color: #fff;
+  font-size: 2em;
+  margin: 0 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* تأثير عند التمرير على الأيقونات */
+.contact-icon:hover {
+  transform: scale(1.2); /* تكبير الأيقونة */
+  color: #23176c; /* تغيير اللون */
+}
+
+
